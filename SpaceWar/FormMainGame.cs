@@ -9,11 +9,16 @@ using System.Windows.Forms;
 
 namespace SpaceWar
 {
-    public partial class Form1 : Form
+    public partial class FormMainGame : Form
     {
-        public Form1()
+        public FormMainGame()
         {
             InitializeComponent();
+        }
+
+        private void timerEnemyShip_Tick(object sender, EventArgs e)
+        {
+            pictureBoxEnemyShip.Top += 1;
         }
     }
 }
