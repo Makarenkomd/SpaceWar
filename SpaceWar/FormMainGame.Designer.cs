@@ -40,7 +40,7 @@
             // pictureBoxMyShip
             // 
             this.pictureBoxMyShip.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxMyShip.Image")));
-            this.pictureBoxMyShip.Location = new System.Drawing.Point(467, 419);
+            this.pictureBoxMyShip.Location = new System.Drawing.Point(456, 399);
             this.pictureBoxMyShip.Name = "pictureBoxMyShip";
             this.pictureBoxMyShip.Size = new System.Drawing.Size(61, 68);
             this.pictureBoxMyShip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -71,8 +71,11 @@
             this.ClientSize = new System.Drawing.Size(911, 516);
             this.Controls.Add(this.pictureBoxEnemyShip);
             this.Controls.Add(this.pictureBoxMyShip);
+            this.KeyPreview = true;
             this.Name = "FormMainGame";
             this.Text = "Космические войны";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormMainGame_KeyDown);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormMainGame_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMyShip)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEnemyShip)).EndInit();
             this.ResumeLayout(false);

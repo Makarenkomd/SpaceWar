@@ -20,5 +20,18 @@ namespace SpaceWar
         {
             pictureBoxEnemyShip.Top += 1;
         }
+
+        private void FormMainGame_KeyPress(object sender, KeyPressEventArgs e)
+        {
+           
+        }
+
+        private void FormMainGame_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Left)
+                pictureBoxMyShip.Left -= 10;
+            if (e.KeyCode == Keys.Right)
+                pictureBoxMyShip.Left += 10;
+        }
     }
 }
