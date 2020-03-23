@@ -19,6 +19,8 @@ namespace SpaceWar
         private void timerEnemyShip_Tick(object sender, EventArgs e)
         {
             pictureBoxEnemyShip.Top += 1;
+            pictureBoxEnemyShip1.Top += 1;
+            pictureBoxEnemyShip2.Top += 1;
         }
 
         private void FormMainGame_KeyPress(object sender, KeyPressEventArgs e)

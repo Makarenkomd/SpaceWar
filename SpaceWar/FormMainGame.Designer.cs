@@ -33,8 +33,12 @@
             this.pictureBoxMyShip = new System.Windows.Forms.PictureBox();
             this.pictureBoxEnemyShip = new System.Windows.Forms.PictureBox();
             this.timerEnemyShip = new System.Windows.Forms.Timer(this.components);
+            this.pictureBoxEnemyShip2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxEnemyShip1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMyShip)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEnemyShip)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEnemyShip2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEnemyShip1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBoxMyShip
@@ -63,12 +67,34 @@
             this.timerEnemyShip.Interval = 10;
             this.timerEnemyShip.Tick += new System.EventHandler(this.timerEnemyShip_Tick);
             // 
+            // pictureBoxEnemyShip2
+            // 
+            this.pictureBoxEnemyShip2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxEnemyShip2.Image")));
+            this.pictureBoxEnemyShip2.Location = new System.Drawing.Point(650, 98);
+            this.pictureBoxEnemyShip2.Name = "pictureBoxEnemyShip2";
+            this.pictureBoxEnemyShip2.Size = new System.Drawing.Size(61, 68);
+            this.pictureBoxEnemyShip2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxEnemyShip2.TabIndex = 2;
+            this.pictureBoxEnemyShip2.TabStop = false;
+            // 
+            // pictureBoxEnemyShip1
+            // 
+            this.pictureBoxEnemyShip1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxEnemyShip1.Image")));
+            this.pictureBoxEnemyShip1.Location = new System.Drawing.Point(148, 134);
+            this.pictureBoxEnemyShip1.Name = "pictureBoxEnemyShip1";
+            this.pictureBoxEnemyShip1.Size = new System.Drawing.Size(61, 68);
+            this.pictureBoxEnemyShip1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxEnemyShip1.TabIndex = 3;
+            this.pictureBoxEnemyShip1.TabStop = false;
+            // 
             // FormMainGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(911, 516);
+            this.Controls.Add(this.pictureBoxEnemyShip1);
+            this.Controls.Add(this.pictureBoxEnemyShip2);
             this.Controls.Add(this.pictureBoxEnemyShip);
             this.Controls.Add(this.pictureBoxMyShip);
             this.KeyPreview = true;
@@ -78,6 +104,8 @@
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormMainGame_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMyShip)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEnemyShip)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEnemyShip2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEnemyShip1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -87,6 +115,8 @@
         private System.Windows.Forms.PictureBox pictureBoxMyShip;
         private System.Windows.Forms.PictureBox pictureBoxEnemyShip;
         private System.Windows.Forms.Timer timerEnemyShip;
+        private System.Windows.Forms.PictureBox pictureBoxEnemyShip2;
+        private System.Windows.Forms.PictureBox pictureBoxEnemyShip1;
     }
 }
 
